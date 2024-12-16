@@ -1,0 +1,29 @@
+{
+  "issuer": "Binance",
+  "desc": "A Crypto exchange and swap platform",
+  "website": "https://www.binance.com/my/dashboard",
+  "APIs": [
+    {
+      "host": "www.binance.com",
+      "intercept": {
+        "url": "bapi/apex/v1/private/apex/marketing/user/sideBarStatus",
+        "method": "GET"
+      },
+      "assert": [
+        {
+          "key": "data|transactionHistoryStatus",
+          "value": "true",
+          "operation": "="
+        }
+      ],
+      "nullifier": "data|transactionHistoryStatus"
+    }
+  ],
+  "HRCondition": [
+    "User has a Binance Account and has made a transaction"
+  ],
+  "tips": {
+    "message": "When you successfully log in, please click the 'Start' button to initiate the verification process."
+  },
+  "id": "0x591ae44761c849269373367cbef57bb3"
+}

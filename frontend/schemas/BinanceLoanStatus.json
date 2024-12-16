@@ -6,17 +6,17 @@
       {
         "host": "www.binance.com",
         "intercept": {
-          "url": "bapi/apex/v1/private/apex/marketing/userTradeStatus",
-          "method": "POST"
+          "url": "bapi/apex/v1/private/apex/marketing/user/sideBarStatus",
+          "method": "GET"
         },
-        "nullifier": "data|hasTrade",
         "assert": [
           {
-            "key": "data|hasTrade",
+            "key": "data|loanStatus",
             "value": "true",
             "operation": "="
           }
-        ]
+        ],
+        "nullifier": "data|loanStatus"
       }
     ],
     "HRCondition": [
@@ -25,6 +25,5 @@
     "tips": {
       "message": "When you successfully log in, please click the 'Start' button to initiate the verification process."
     },
-    "id": "0x4e1608232b3c47ba88ebbe0878d267ea",
-    "category": "Financial"
+    "id": "0x13fc1bac263d42ad9d3890a60809e86f"
 }

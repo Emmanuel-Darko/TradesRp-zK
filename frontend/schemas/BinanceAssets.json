@@ -1,0 +1,39 @@
+{
+    "issuer": "Binance",
+    "desc": "A Crypto exchange and swap platform",
+    "website": "https://www.binance.com/my/dashboard",
+    "APIs": [
+      {
+        "host": "www.binance.com",
+        "intercept": {
+          "url": "bapi/asset/v2/private/asset-service/wallet/asset",
+          "method": "GET"
+        },
+        "assert": [
+          {
+            "key": "data|1|amount",
+            "value": "0",
+            "operation": ">"
+          },
+          {
+            "key": "data|2|amount",
+            "value": "0",
+            "operation": ">"
+          },
+          {
+            "key": "data|3|amount",
+            "value": "0",
+            "operation": ">"
+          }
+        ],
+        "nullifier": "data|1|amount"
+      }
+    ],
+    "HRCondition": [
+      "User has a Binance Account has at least 3 assets"
+    ],
+    "tips": {
+      "message": "When you successfully log in, please click the 'Start' button to initiate the verification process."
+    },
+    "id": "0x7c7410f4c5044c979484333263309d10"
+}

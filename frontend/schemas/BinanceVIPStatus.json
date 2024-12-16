@@ -1,0 +1,29 @@
+{
+    "issuer": "Binance",
+    "desc": "A Crypto exchange and swap platform",
+    "website": "https://www.binance.com/my/dashboard",
+    "APIs": [
+      {
+        "host": "www.binance.com",
+        "intercept": {
+          "url": "bapi/accounts/v1/private/vip/vip-portal/baseStatus",
+          "method": "GET"
+        },
+        "assert": [
+          {
+            "key": "data|userType",
+            "value": "VIP",
+            "operation": "="
+          }
+        ],
+        "nullifier": "data|userId"
+      }
+    ],
+    "HRCondition": [
+      "User has a Binance Account and has a VIP status"
+    ],
+    "tips": {
+      "message": "When you successfully log in, please click the 'Start' button to initiate the verification process."
+    },
+    "id": "0x79e57c411c234eaf92d7cbb07113e5ed"
+}
