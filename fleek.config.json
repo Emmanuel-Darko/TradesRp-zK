@@ -1,0 +1,9 @@
+{
+  "sites": [
+    {
+      "slug": "tall-grass-harsh",
+      "distDir": "frontend/.output",
+      "buildCommand": "npm run build"
+    }
+  ]
+}

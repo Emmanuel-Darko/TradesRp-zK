@@ -1,4 +1,4 @@
-# Binance User and Trade Verification - ZKPass Bounty
+# Binance User and Trade Verification - ZKPass
 
 This project is built with Nuxt 3 and integrates zkPass for verifying Binance user information and trades securely.
 
@@ -14,7 +14,7 @@ Before running this project, ensure you have the following installed:
 
 1. **Clone the repository** (if applicable):
    ```bash
-   git clone https://github.com/your-repo/binance-verification-zkpass.git
+   git clone https://github.com/Emmanuel-Darko/TradesRp-zK/tree/main/frontend/schemas
 
 2.  **Install dependencies**
     ```bash
@@ -28,4 +28,34 @@ Before running this project, ensure you have the following installed:
     yarn dev
 
 3. **Working Demo**
-    https://harsh-smartphone-straight.on-fleek.app/
+    https://kode-tradesrep2.on-fleek.app/
+
+
+5. **Project Breakdown**
+    zkPass Schema for Binance User Verification
+    zkPass is a privacy-preserving solution that enables secure sharing and verification of data without exposing sensitive information. Below are the Binance-related schemas you can use with zkPass to build decentralized applications:
+
+    "website": "https://www.binance.com/my/dashboard",
+
+    1. Binance User Verification (bapi/accounts/v1/private/account/user/base-detail)
+
+    Verifies that the user has a Binance account. This can be used to confirm the user's identity while keeping personal data private.
+
+    2. Binance Transaction History (bapi/apex/v1/private/apex/marketing/user/sideBarStatus)
+
+    Allows verification of a user’s transaction history on Binance. Useful for applications requiring proof of trading activity without revealing exact details.
+
+    3. Binance Loan Status (bapi/apex/v1/private/apex/marketing/user/sideBarStatus)
+
+    Checks if a user has active or past loans on Binance. Helps evaluate financial behavior while preserving confidentiality. Binance VIP Status
+
+    4. Confirms the user’s Binance VIP level. (bapi/accounts/v1/private/vip/vip-portal/baseStatus)
+
+    Ideal for granting benefits or access based on the user’s VIP tier. Binance Assets
+
+    5. Verifies the user’s asset holdings on Binance. (bapi/asset/v2/private/asset-service/wallet/asset)
+
+    Ensures proof of asset ownership without exposing exact balances.
+
+    GitHub Repository for Schemas: 🔗 https://github.com/Emmanuel-Darko/TradesRp-zK/tree/main/frontend/schemas
+
