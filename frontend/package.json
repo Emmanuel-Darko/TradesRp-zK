@@ -11,14 +11,16 @@
   },
   "dependencies": {
     "@nuxt/icon": "^1.5.6",
-    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@nuxtjs/dotenv": "^1.4.2",
+    "@nuxtjs/tailwindcss": "^6.12.2",
     "@zkpass/transgate-js-sdk": "^0.3.1",
     "buffer": "^6.0.3",
     "ethers": "^6.13.4",
     "nuxt": "^3.13.0",
     "vue": "latest",
     "vue-json-pretty": "^2.4.0",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "web3": "^4.16.0"
   },
   "devDependencies": {
     "vite-plugin-node-polyfills": "^0.22.0"

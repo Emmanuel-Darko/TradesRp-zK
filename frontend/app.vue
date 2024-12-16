@@ -1,7 +1,8 @@
 <template>
   <div>
     <NuxtRouteAnnouncer />
-    <ZkPassBinance />
+    <!-- <ZkPassBinance /> -->
+    <NuxtPage />
   </div>
 </template>
 
